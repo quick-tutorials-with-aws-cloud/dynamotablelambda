@@ -59,15 +59,17 @@ Resources:
               - sts:AssumeRole
       Path: "/"
       Policies:
-        - PolicyName: !Sub ${ApiName}NetworkPolicy
+        - PolicyName: !Sub ${ApiName}ExecutionRolePolicy
           PolicyDocument:
             Version: "2012-10-17"
             Statement:
               - Effect: Allow
                 Action:
-                  - logs:*
+                  - logs:CreateLogStream
+                  - logs:CreateLogGroup
+                  - logs:PutLogEvents
                 Resource: "*"
-        - PolicyName: !Sub ${ApiName}ExecutionRolePolicy
+        - PolicyName: !Sub ${ApiName}DynamoDBRolePolicy
           PolicyDocument:
             Version: "2012-10-17"
             Statement:
