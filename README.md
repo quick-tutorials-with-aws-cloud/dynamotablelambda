@@ -1,4 +1,4 @@
-# DynamoDB Table and Lambda
+# dynamotablelambda
 
 This project creates:
 - DynamoDB Table;
