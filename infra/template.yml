@@ -1,9 +1,8 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: Creates a DynamoDB Table and a Lambda
+Description: Creates a DynamoDB Table and a Lambda to consume it
 
 Parameters:
-
   TableName:
     Type: String
     Default: Customer
@@ -25,7 +24,6 @@ Parameters:
     Default: tg
 
 Resources:
-
   Table:
     Type: AWS::DynamoDB::Table
     Properties:
