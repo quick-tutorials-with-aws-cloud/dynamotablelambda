@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: Creates a DynamoDB Table and a Lambda to consume it
+Description: Creates a DynamoDB table and a Lambda function to consume it
 
 Parameters:
   TableName:

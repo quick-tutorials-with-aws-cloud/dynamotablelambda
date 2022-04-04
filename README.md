@@ -2,7 +2,11 @@
 
 This project creates:
 - A DynamoDB Table;
-- A Lambda function that will consume the DynamoDB Table;
+- A Lambda function to consume the DynamoDB Table using AWS SDK;
+    - scan;
+    - put;
+    - get;
+    - delete
 
 ## Helpful links
 
